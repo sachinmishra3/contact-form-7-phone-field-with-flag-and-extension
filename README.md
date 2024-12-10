@@ -1,10 +1,10 @@
 # contact-form-7-phone-field-with-flag-and-extension
 Custom code for contact form 7 WordPress plugin. Code helps modify the Telephone/Phone number field. Script will show country number prefix extension with country flags.
 
-<img src="https://github.com/narinderbisht/contact-form-7-phone-field-with-flag-and-extension/blob/master/screenshot.png" alt="screenshot"/>
+<img src="https://github.com/sachinmishra3/contact-form-7-phone-field-with-flag-and-extension/blob/master/screenshot.png" alt="screenshot"/>
 
 ## Getting Started
-1. Download the [latest release](https://github.com/narinderbisht/contact-form-7-phone-field-with-flag-and-extension/releases/latest).
+1. Download the [latest release](https://github.com/sachinmishra3/contact-form-7-phone-field-with-flag-and-extension/releases/latest).
 
 2. Uzip the folder. Copy nb_country Folder inside your wordpress active theme root. web_root/wp-content/themes/active_theme
 
@@ -24,7 +24,6 @@ add_action( 'wp_enqueue_scripts', 'nb_internationPhoneCssJs' );
 4. Add telephone type input in your contact form. You can use custom css class or ID attribute. But same ID/Class attribute should be use in custom_script.js file Jquery elelemnt sepecifier. Current specifier will display flag drop down on all telephone number fields.
 For example: .wpcf7-tel
 ```js
-(function($) {
         $(function() {
             $(".wpcf7-tel").intlTelInput({
               // allowDropdown: false,
@@ -51,13 +50,8 @@ For example: .wpcf7-tel
             });
         });
 })(jQuery);
-})(jQuery);
 ```
 
 # Reference
 
 1. https://github.com/jackocnr/intl-tel-input
-
-# Author website and blog
-
-http://narindersingh.in
